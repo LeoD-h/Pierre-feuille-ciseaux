@@ -1,50 +1,110 @@
-# React + TypeScript + Vite
+Voici un exemple de fichier `README.md` pour ton projet React de Pierre-Feuille-Ciseaux. Ce fichier explique le projet, comment l'installer, l'utiliser, et contribuer. Tu peux le personnaliser selon tes besoins.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Pierre-Feuille-Ciseaux en React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Un jeu classique de Pierre-Feuille-Ciseaux développé avec React et TypeScript. Ce projet est conçu pour être simple, intuitif et amusant à jouer.
 
-## Expanding the ESLint configuration
+![Capture d'écran du jeu](./before.png) <!-- Remplace par une capture d'écran réelle si possible -->
+![Capture d'écran du jeu](./after.png) <!-- Remplace par une capture d'écran réelle si possible -->
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Fonctionnalités
 
-- Configure the top-level `parserOptions` property like this:
+- **Choix utilisateur** : Sélectionne entre Pierre, Feuille ou Ciseaux.
+- **Choix de l'ordinateur** : L'ordinateur choisit aléatoirement.
+- **Décompte** : Un décompte de 3 secondes avant de révéler les choix.
+- **Résultat** : Affiche le résultat de la partie (Gagné, Perdu ou Égalité).
+- **Rejouer** : Un bouton "Rejouer" pour recommencer une nouvelle partie.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Technologies utilisées
+
+- **React** : Bibliothèque JavaScript pour construire l'interface utilisateur.
+- **TypeScript** : Ajoute des types statiques pour une meilleure maintenabilité.
+- **CSS** : Styles personnalisés pour une interface utilisateur attrayante.
+
+## Installation
+
+Suis ces étapes pour installer et exécuter le projet localement.
+
+### Prérequis
+
+- Node.js (version 16 ou supérieure)
+- npm (gestionnaire de paquets Node.js)
+
+### Étapes
+
+1. Clone le dépôt :
+
+   ```bash
+   git clone https://github.com/ton-utilisateur/pierre-feuille-ciseaux-react.git
+   ```
+
+2. Accède au dossier du projet :
+
+   ```bash
+   cd pierre-feuille-ciseaux-react
+   ```
+
+3. Installe les dépendances :
+
+   ```bash
+   npm install
+   ```
+
+4. Lance l'application en mode développement :
+
+   ```bash
+   npm start
+   ```
+
+5. Ouvre ton navigateur et accède à :
+
+   ```
+   http://localhost:3000
+   ```
+
+## Utilisation
+
+1. Clique sur **Start Game** pour commencer une nouvelle partie.
+2. Sélectionne Pierre, Feuille ou Ciseaux avant la fin du décompte.
+3. Le résultat de la partie sera affiché après le décompte.
+4. Clique sur **Rejouer** pour recommencer une nouvelle partie.
+
+## Structure du projet
+
+```
+pierre-feuille-ciseaux-react/
+├── public/                  # Fichiers publics (HTML, images, etc.)
+├── src/                     # Code source du projet
+│   ├── components/          # Composants React
+│   ├── App.tsx              # Composant principal
+│   ├── index.tsx            # Point d'entrée de l'application
+│   ├── App.css              # Styles CSS pour l'application
+│   └── ...                  # Autres fichiers
+├── package.json             # Dépendances et scripts
+├── tsconfig.json            # Configuration TypeScript
+└── README.md                # Documentation du projet
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contribuer
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Les contributions sont les bienvenues ! Si tu souhaites améliorer ce projet, suis ces étapes :
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Fork le projet.
+2. Crée une nouvelle branche (`git checkout -b feature/nouvelle-fonctionnalité`).
+3. Commit tes changements (`git commit -m 'Ajouter une nouvelle fonctionnalité'`).
+4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalité`).
+5. Ouvre une Pull Request.
+
+## Licence
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+## Auteur
+
+- **Ton Nom** - [Ton GitHub](https://github.com/ton-utilisateur)
+
+---
