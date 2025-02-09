@@ -71,6 +71,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ## Auteur
 
-- **Léo D**  - [Ton GitHub](https://github.com/LeoD-h)
+- **Léo D**  - [Github](https://github.com/LeoD-h)
 
 ---
